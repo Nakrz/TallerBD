@@ -162,9 +162,9 @@ FROM producto
 8. Lista el nombre de todos los fabricantes en una columna, y en otra  columna obtenga en mayúsculas los dos primeros caracteres del nombre del fabricante.
 
    ```sql
-        SELECT nombre, UPPER(LEFT(nombre, 2)) AS Mayus
+       SELECT nombre, UPPER(LEFT(nombre, 2)) AS Mayus
    
-   ​    FROM fabricante
+   ​   FROM fabricante
    
    
    ```
@@ -377,13 +377,15 @@ FROM producto
 
 23. Lista el nombre de los productos que no tienen un precio mayor o igual a 400€.
 
-
 ​    
-    SELECT nombre, precio
-    
-    FROM producto
-    
-    WHERE precio < 400;
+
+```sql
+SELECT nombre, precio
+
+FROM producto
+
+WHERE precio < 400;
+```
 
 
 
